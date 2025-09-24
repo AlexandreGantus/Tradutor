@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tradutor Simples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/action.js" defer></script>
+    </head>
+    
+    <body>
+        <div class="main">
+
+            <div class="title"> 
+                <h2>Tradutor de Idiomas</h2> 
+            </div>
+
+            <div class="form">
+                <label for="i_texto">Texto a Traduzir</label>
+                <textarea id="i_texto" rows="4" cols="30"></textarea>
+
+                <label for="i_idioma">Traduzir para</label>
+                <select id="i_idioma">
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="fr">Francês</option>
+                    <option value="de">Alemão</option>
+                </select>
+
+                <input type="submit" value="Traduzir" id="btt">
+            </div>
+
+            <div id="resp">
+                <label>Tradução:</label>
+                <div id="txt_traducao"></div>
+            </div>
+
+            <div class="footer">
+                <p> &copy; Alexandre Gantus - 2025 </p>
+            </div>
+
+        </div>
+    </body>
+</html>

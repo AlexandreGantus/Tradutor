@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'open sans';
+    src: url("../font/OpenSans.ttf");
+}
+
+/* * A propriedade box-sizing: border-box; 
+ * é fundamental. Ela garante que a largura e altura dos elementos
+ * incluem padding e borda, facilitando o layout e evitando
+ * que elementos transbordem.
+ */
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --body_color: #292e2e;
+    --main_color: #444b4b;
+}
+
+body{
+    font-family: 'open sans';
+    background-color: #161818;
+    /* Alinha o container principal no centro da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main{
+    width: 400px;
+    height: auto; /* A altura se ajustará ao conteúdo */
+    border-radius: 10px;
+    background-color: var(--main_color);
+    padding-bottom: 20px; /* Adiciona um padding na parte inferior */
+}
+
+.title, .footer{
+    text-align: center;
+    padding: 1px 0px;
+    background-color: #292e2e;
+    color: #f0f8ff;
+}
+
+.title{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.footer{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form label{
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #f0f8ff;
+}
+
+.form input, .form select, .form textarea{
+    display: block;
+    width: 100%; /* Ocupa 100% da largura do seu container (.form) */
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea#i_texto{
+    height: 100px; /* Altura fixa para a caixa de texto */
+    resize: vertical; /* Permite o usuário redimensionar apenas na vertical */
+}
+
+#btt{
+    cursor: pointer;
+    font-family: 'open sans';
+    height: 35px;
+    background-color: #0087b4;
+    color: #f0f8ff;
+    font-weight: bolder;
+    transition: 0.6s;
+    margin-top: 20px;
+}
+
+#btt:hover{
+    background-color: #00b1ec;
+}
+
+#resp{
+    display: none; 
+    padding: 0 20px; /* Mesma padding do formulário para alinhar */
+}
+
+#resp label{
+    display: block;
+    font-size: 20px;
+    color: #f0f8ff;
+    margin-bottom: 5px;
+}
+
+#resp div{
+    font-size: 18px;
+    color: #fdc819;
+    
+    /* Propriedades que garantem a quebra de linha */
+    word-break: break-word; 
+    overflow-wrap: break-word;
+}
